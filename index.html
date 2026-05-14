@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wahyu AI Supreme</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="neon-bg"></div>
+    <div class="app-container">
+        <header>
+            <div class="ai-info">
+                <div class="avatar-wrapper">
+                    <img id="ai-avatar" src="https://api.dicebear.com/7.x/adventurer/svg?seed=Anime" alt="AI">
+                    <div class="status-dot"></div>
+                </div>
+                <div>
+                    <h2 id="ai-display-name">WAHYU_CORE</h2>
+                    <small id="clock">00:00:00</small>
+                </div>
+            </div>
+            <div class="header-btns">
+                <button onclick="toggleVoice()" id="voice-btn">🔊</button>
+                <button onclick="hapusChat()">🗑️</button>
+            </div>
+        </header>
+
+        <div id="chat-box">
+            <div class="msg bot">Selamat datang, Tuan Wahyu ✨. Ada yang bisa saya bantu rakit hari ini? 🌸</div>
+        </div>
+
+        <div id="loader" class="hidden">Sabar dulu Tuan, loading... ✨</div>
+
+        <div class="quick-btns">
+            <button onclick="quickCmd('Menu Fitur')">📋 Menu</button>
+            <button onclick="quickCmd('Cari Music ID')">🎵 Music ID</button>
+            <button onclick="quickCmd('Buat Logo')">🎨 Logo</button>
+            <button onclick="quickCmd('Rakit Web')">🌐 Web</button>
+        </div>
+
+        <div class="input-area">
+            <input type="text" id="user-input" placeholder="Ketik perintah..." autocomplete="off">
+            <button id="send-btn">KIRIM</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
